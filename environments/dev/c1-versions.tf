@@ -8,7 +8,7 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "terraform-on-gcp-gke-boris"
+    bucket = "terraform-on-gcp-gke-boris"  # update the bucket name
     prefix = "dev/gke-cluster"    
   }
 }
