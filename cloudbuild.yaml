@@ -75,3 +75,8 @@ steps:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]      
+- name: 'gcr.io/cloudbuild/docker'
+  args: ['build', '-t', 'my-image', '.']
+options:
+  logging: CLOUD_LOGGING_ONLY
+
